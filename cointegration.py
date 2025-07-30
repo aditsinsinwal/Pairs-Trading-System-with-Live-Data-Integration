@@ -3,7 +3,6 @@ import pandas as pd
 from statsmodels.tsa.stattools import coint
 from statsmodels.tsa.vector_ar.vecm import coint_johansen
 
-
 def engle_granger_test(x: pd.Series,
                        y: pd.Series,
                        trend: str = 'c',
