@@ -68,7 +68,7 @@ class KalmanFilterEstimator:
 
 class ZScoreSignal:
     """
-    Turn a spread series into z-scores and generate entry/exit signals.
+    Turn a spread series into z-scores and generate signals.
     """
 
     def __init__(self, lookback: int = 60,
