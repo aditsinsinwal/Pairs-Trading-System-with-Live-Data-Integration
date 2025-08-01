@@ -84,7 +84,7 @@ class BacktestEngine:
 
 
 if __name__ == "__main__":
-    # --- Example usage ---
+
     import numpy as np
 
     dates = pd.date_range("2025-01-01", periods=100, freq="T")
