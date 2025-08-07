@@ -60,14 +60,14 @@ with col3:
     ax3.legend(loc="upper left")
     st.pyplot(fig3)
 
-# Performance metrics
+#Performance metrics
 st.markdown("---")
 st.subheader("Performance Metrics")
 returns = df["equity"].pct_change().fillna(0.0)
 metrics = MetricsCalculator(returns)
 st.table(metrics.report().to_frame(name="Value"))
 
-# Optional raw data view
+#Raw data view
 if st.sidebar.checkbox("Show raw data"):
     st.subheader("Raw Data")
     st.dataframe(df)
